@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body class="all_body">
+<div class="container">
+ <!--Normally these medium columns go full wide on small screen sizes-->
+<div class="row">
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <h1 class ="latidute_text" style="font-weight:bold"><a href="/">Water Pump Project</a></h1>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science Cycle <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="/business">1 Define The Goal</a></li>
+                                <li><a href="/getting_data">2 Get The Data</a></li>
+                                <li><a href="/cleaning">3 Explore&Clean Data</a></li>
+                                <li><a href="/enrich">4 Enrich The Data</a></li>
+                                <li><a href="/find_insight">5 Find Insights and Visualize</a></li>
+                                <li><a href="/ml">6 Deploy ML</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/map">Map Visualization of Data</a></li>
+                        
+                </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </nav>
+</div>   
+
+    <div class="second_row">
+
+        <div class="row">
+                <div class="col-xs-12 col-sm-12  col-md-8 col-lg-8 main_box">
+                        <h3 class="baslik">Step 4: Enriching Data</h3>
+                        
+                        <div class="main_box_content">
+                            <p class="first_p_in_summary"> In this step I tried to get most out of my data. I create new column from time based feature. I get difference between consruction year from date recorded and I get the mount and year values for last recorded time.I created new columns based on necessary columns using bining technic. I grouped feature values for feature which has too many categorical values. </p>
+                            <br>
+
+                        </div>
+                </div>
+                   
+        
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right_box">
+                        <h4 class="baslik" > Technics I have used to Enrich Data:  </h4>
+                        <br>
+                        <ul>
+                            <li> Imputing : Longitude , Latitude etc.</li>
+                            <li> Handling Outliers : Amount_tsh , Gps_hights </li>
+                            <li> Binning :  Construction Year</li>
+                            <li> Log Transform :  Amount_tsh</li>
+                            <li> One-Hot Encoding : Permit , Public_meeting </li>
+                            <li> Grouping :  Funder, Installer</li>
+                            <li> Scalling : Cleaned Data Frame</li>
+                            <li> Extracting Date : Date Recorded </li>
+                        </ul>
+                        <br>
+                        <br>
+                </div>
+              
+        </div>
+
+
+        <div class="row">
+                <h3 style="text-align: center;font-weight: bold;"> Imputing </h3>
+                <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                        <div class="main_box_content">
+                                
+                                <img class= "my_imgs" src="../static/images/Before_Lat_Long_Features.png" alt="missing_values" style="margin-left: 10%" >
+                        </div>
+                </div>
+                   
+        
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right_box">
+                        <div class="main_box_content">
+                                
+                                <img class= "my_imgs" src="../static/images/After_Lat_Long_Features.png" alt="missing_values" style="margin-left: 10%" >
+                        </div>
+                </div>
+              
+        </div>
+
+
+        <div class="row">
+                <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12 main_box">
+                        <div class="main_box_content">
+                                <br>
+                                <p>They were longitude and latidute values missing. I get the mean values for water pumps based on thier geografic location I gained from region , district features.</p>        
+                                <br>
+                                <br>
+                        </div>
+                </div>
+               
+        
+             
+        </div>
+
+        <div class="row">
+                        <h3 style="text-align: center;font-weight: bold;"> Grouping </h3>
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/5_values_funder_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                </div>
+                        </div>
+                           
+                
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right_box">
+                                <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/5_values_installer_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                </div>
+                        </div>
+                      
+                </div>
+
+                <div class="row">
+                        <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12 main_box">
+                                <div class="main_box_content">
+                                        <p>Some categorical features were having so many unique values. I get the highest frequency values and I grouped others in others value to reduce uniqueness</p>        
+                                <br>
+                                <br>
+                                </div>
+                        </div>
+                                   
+                              
+                </div>
+
+                <div class="row">
+                        <h3 style="text-align: center;font-weight: bold;"> Handling Outliers & Log Transformatin</h3>
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/Before_Box_plot_for_amount_tsh_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                </div>
+                        </div>
+                                
+                
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right_box">
+                                <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/After_Box_plot_for_amount_tsh_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                </div>
+                        </div>
+                              
+                </div>
+
+                <div class="row">
+                        <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12 main_box">
+                                <div class="main_box_content">
+                                <br>
+                                        <p>Amount_tsh and some other features were having so many outliers which couse ovefitting. I treaded them with log and outlier deletion.</p>        
+                                <br>
+                                <br>
+                                </div>
+                        </div>
+                                        
+                                
+                </div>
+
+                <div class="row">
+                                <h3 style="text-align: center;font-weight: bold;"> Binning</h3>
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/5_values_seperated_construction_year_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                        <br>
+                                        <br>
+                                        <br>
+                                </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                <div class="main_box_content">
+                                        <br>
+                                        <p>I crreated some new features by binning existing ones to get more insight about the data</p>        
+                                        <br>
+                                </div>
+                        </div>
+
+                                
+                </div>
+
+
+
+
+    </div>
+
+ 
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

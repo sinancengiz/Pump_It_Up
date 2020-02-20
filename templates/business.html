@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body class="all_body">
+<div class="container">
+ <!--Normally these medium columns go full wide on small screen sizes-->
+<div class="row">
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <h1 class ="latidute_text" style="font-weight:bold"><a href="/">Water Pump Project</a></h1>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science Cycle <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="/business">1 Define The Goal</a></li>
+                                <li><a href="/getting_data">2 Get The Data</a></li>
+                                <li><a href="/cleaning">3 Explore&Clean Data</a></li>
+                                <li><a href="/enrich">4 Enrich The Data</a></li>
+                                <li><a href="/find_insight">5 Find Insights and Visualize</a></li>
+                                <li><a href="/ml">6 Deploy ML</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/map">Map Visualization of Data</a></li>
+                        
+                </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </nav>
+</div>   
+
+<div class="second_row">
+
+                <div class="row">
+                        <div class="col-xs-12 col-sm-12  col-md-8 col-lg-8 main_box">
+                                <h3 class="baslik">Step 1: Define The Goal</h3>
+                                <div class="main_box_content">
+                                <p>Understanding the business or activity that your data project is part of is key to ensuring its success. To motivate the different actors necessary to getting your project from design to production, your project must be the answer to a clear organizational need. So before you even think about the data, go out and talk to the people in your organization whose processes or whose business you aim to improve with data. Then sit down to define a timeline and concrete key performance indicators. I know, planning and processes seem boring, but in the end, they are an essential first step to kickstart your data initiative! </p>
+                                <p> Using data from Taarifa and the Tanzanian Ministry of Water, can you predict which pumps are functional, which need some repairs, and which don't work at all? This is an intermediate-level practice competition. Predict one of these three classes based on a number of variables about what kind of pump is operating, when it was installed, and how it is managed. A smart understanding of which waterpoints will fail can improve maintenance operations and ensure that clean, potable water is available to communities across Tanzania. </p>
+                                <br>
+                                <h3 class="baslik">The Goal</h3>
+                                <p> My goal is to predict the operating condition of a waterpoint for each record in the test dataset.  </p>
+                                
+                                </div>
+                        </div>
+                           
+                
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right_box">
+                                <div class= "second_box_content">
+                                <h3 class="baslik" style="text-align: center">Tanzania</h3>
+                                <a href="https://www.google.com/maps/place/Tanzania/@-6.3423805,30.4890535,6z/data=!3m1!4b1!4m5!3m4!1s0x184b51314869a111:0x885a17314bc1c430!8m2!3d-6.369028!4d34.888822" target="_blank">
+                                <img class= "my_imgs" src="../static/images/tanzania.png" alt="tanzania_map" style="height: 250px">
+                                </a>
+                                </div>
+                        </div>
+                      
+                </div>
+        
+        
+            </div>
+
+ 
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

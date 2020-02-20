@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body class="all_body">
+<div class="container">
+ <!--Normally these medium columns go full wide on small screen sizes-->
+<div class="row">
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <h1 class ="latidute_text" style="font-weight:bold"><a href="/">Water Pump Project</a></h1>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science Cycle <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="/business">1 Define The Goal</a></li>
+                                <li><a href="/getting_data">2 Get The Data</a></li>
+                                <li><a href="/cleaning">3 Explore&Clean Data</a></li>
+                                <li><a href="/enrich">4 Enrich The Data</a></li>
+                                <li><a href="/find_insight">5 Find Insights and Visualize</a></li>
+                                <li><a href="/ml">6 Deploy ML</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/map">Map Visualization of Data</a></li>
+                        
+                </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </nav>
+</div>   
+
+    <div class="second_row">
+
+        <div class="row">
+                <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                        <h3 class="baslik">Step 3: Exploring and Cleaning The Data</h3>
+                        <div class="main_box_content">
+                            <p class="first_p_in_summary"> Data cleansing or data cleaning is the process of identifying and 
+                                    removing (or correcting) inaccurate records from a dataset, table, or database and refers
+                                     to recognising unfinished, unreliable, inaccurate or non-relevant parts of the data and 
+                                     then restoring, remodelling, or removing the dirty or crude data. </p>
+                                     <h4 class="baslik" style="margin-top: 10%">Data Cleaning Steps</h4>
+                                     <ul>
+                                     <li> Get Rid of Extra Spaces </li>
+                                     <li> Select and Treat All Blank Cells </li>
+                                     <li> Convert Numbers Stored as Text into Numbers </li>
+                                     <li> Remove Duplicates </li>
+                                     <li> Highlight Errors </li>
+                                     <li> Change Text to Lower/Upper/Proper Case </li>
+                                     <li> Spell Check </li>
+                                     <li> Delete all Formatting </li>
+                                     </ul>
+                            <br>
+                            <br>
+                        </div>
+                </div>
+                   
+        
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right_box">
+                        <h3 class="baslik">Cells with Missing Values</h3>
+                        <div class= "second_box_content">
+                                <p class="second_p_in_summary">I looked at the missing value sin the data set and I ploted the to see columns with missing values.There are 7 columns which has mssing values, These are Funder, installer, subvillage, public_meeting, scheme_management and permit. Scheme_management has over 25000 missing values while others has less then 5000.</p>
+                                <img class= "my_imgs" src="../static/images/Columns_with_missing_values.png" alt="missing_values" style="margin-left: 10%" >
+                        </div>
+                </div>
+              
+        </div>
+
+
+    </div>
+
+    <div class="third_row">
+
+                <div class="row">
+                        <h3 class="baslik" style="text-align: center; margin-bottom: 3%">Variable Identification</h3>
+                        <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                
+                                <div class="main_box_content">
+                                
+                                <img class= "my_imgs" src="../static/images/Variable_ype_ie.png" alt="missing_values" style="margin-left: 10%" >
+                                <p>Variable Type : There is 40 predicter and 1 target variable</p>        
+                                </div>
+                        </div>
+                           
+                
+                        <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                
+                                        <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/Data_type_pie.png" alt="missing_values" style="margin-left: 10%" >
+                                        <p>Data Type : There are 31 Character and 10 Numeric Data types</p>        
+                                        </div>
+                        </div>
+                        
+                        <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                
+                                        <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/Variable_category_pie.png" alt="missing_values" style="margin-left: 10%" >
+                                        <p>Variable Category : There are  33 Categorical and 7 Continuous (amount_tsh, gps_height, longitude, latitude, population,construction_year, date_recorded )</p>        
+                                        </div>
+                        </div>
+                      
+                </div>
+        
+        
+        </div>
+
+        <div class="forth_row">
+
+                        <div class="row">
+                                <h3 class="baslik" style="text-align: center; margin-bottom: 3%; margin-top:10%">Univariate Analysis</h3>
+                                <p>At this stage, we explore variables one by one. Method to perform uni-variate analysis will depend on whether the variable type is categorical or continuous. Let’s look at these methods and statistical measures for categorical and continuous variables individually:</p>
+                                <h4>Continuous Variables</h4>
+                                <p>In case of continuous variables, we need to understand the central tendency and spread of the variable. These are measured using various statistical metrics visualization methods as shown below:</p>
+                                <div class="col-xs-12 col-sm-12  col-md-12 col-lg-12 main_box">
+                                        
+                                        <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/train_data_description_df.png" alt="missing_values"style="margin:5%" >
+                                               
+                                        </div>
+                                        <p></p>
+                                </div>
+                                   
+                              
+                        </div>
+                
+                
+        </div>
+        <div class="five_row">
+
+                        <div class="row">
+                                <h4 style="text-align: center; margin-bottom: 3%; margin-top:5%">Box Plots For Exploring Data</h4>
+                               
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                        <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/Before_Box_plot_for_amount_tsh_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                        <p>Box Plot shows outliers and distribution of the feature</p>        
+                                        </div>
+                                        <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Box_plot_for_construction_year_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                                <p>Box Plot shows outliers and distribution of the feature</p>         
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Box_plot_for_district_code_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                                <p>Box Plot shows outliers and distribution of the feature</p>        
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Box_plot_for_gps_height_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                                <p>Box Plot shows outliers and distribution of the feature</p>        
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Box_plot_for_latitude_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                                <p>Box Plot shows outliers and distribution of the feature</p>        
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Box_plot_for_longitude_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                                <p>Box Plot shows outliers and distribution of the feature</p>        
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Box_plot_for_population_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                                <p>Box Plot shows outliers and distribution of the feature</p>         
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Box_plot_for_region_code_Feature.png" alt="missing_values" style="margin-left: 10%" >
+                                                <p>Box Plot shows outliers and distribution of the feature</p>        
+                                                </div>
+                                                <p></p>
+                                </div>
+                              
+                        </div>
+                
+                
+        </div>
+
+        <div class="six_row">
+
+                        <div class="row">
+                                <h4 style="text-align: center; margin-bottom: 3%; margin-top:5%">Histogram Plots For Exploring Data</h4>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                        <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/Before_Histogram_for_amount_tsh_Feature.png" alt="missing_values"  >
+                                        <p> Histogram provides a visual representation of data distribution. Histograms can display a large amount of data and the frequency. The function will calculate and return a frequency distribution. We can use it to get the frequency of values in a dataset.</p>        
+                                        </div>
+                                        <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Histogram_for_construction_year_Feature.png" alt="missing_values"  >
+                                                <p> Histogram provides a visual representation of data distribution. Histograms can display a large amount of data and the frequency. The function will calculate and return a frequency distribution. We can use it to get the frequency of values in a dataset.</p>
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Histogram_for_gps_height_Feature.png" alt="missing_values"  >
+                                                <p> Histogram provides a visual representation of data distribution. Histograms can display a large amount of data and the frequency. The function will calculate and return a frequency distribution. We can use it to get the frequency of values in a dataset.</p>
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Histogram_for_latitude_Feature.png" alt="missing_values"  >
+                                                <p> Histogram provides a visual representation of data distribution. Histograms can display a large amount of data and the frequency. The function will calculate and return a frequency distribution. We can use it to get the frequency of values in a dataset.</p>
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Histogram_for_longitude_Feature.png" alt="missing_values" >
+                                                <p> Histogram provides a visual representation of data distribution. Histograms can display a large amount of data and the frequency. The function will calculate and return a frequency distribution. We can use it to get the frequency of values in a dataset.</p>
+                                                </div>
+                                                <p></p>
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Before_Histogram_for_population_Feature.png" alt="missing_values"  >
+                                                <p> Histogram provides a visual representation of data distribution. Histograms can display a large amount of data and the frequency. The function will calculate and return a frequency distribution. We can use it to get the frequency of values in a dataset.</p>
+                                                </div>
+                                                <p></p>
+                                </div>
+
+
+                              
+                        </div>
+                
+                
+        </div>
+
+        <div class="seven_row">
+
+                        <div class="row">
+                                
+                                <h4>Categorical Variables:</h4>
+                                <p>For categorical variables, we’ll use frequency table to understand distribution of each category. We can also read as percentage of values under each category. It can be be measured using two metrics, Count and Count% against each category. Bar chart can be used as visualization.</p>
+                                <h4 style="text-align: center; margin-bottom: 3%; margin-top:5%">Frequency Table  Plots For Exploring Categorical Data</h4>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                        <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/Frequency_table_basin_Feature.png" alt="missing_values" style="width: 100%" >
+                                        <p>Frequency tables are useful for analyzing categorical data. To see distrubution of the data helps to get better insight</p>        
+                                        </div>
+                                        
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Frequency_table_extraction_type_Feature.png" alt="missing_values" style="width: 100%" >
+                                                <p>Frequency tables are useful for analyzing categorical data. To see distrubution of the data helps to get better insight</p>        
+                                                </div>
+                                                
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Frequency_table_management_Feature.png" alt="missing_values" style="width: 100%" >
+                                                <p>Frequency tables are useful for analyzing categorical data. To see distrubution of the data helps to get better insight</p>        
+                                                </div>
+                                                
+                                </div>
+
+                        </div>
+
+<div class="seven_row">
+
+                <div class="row">
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Frequency_table_payment_type_Feature.png" alt="missing_values" style="width: 100%" >
+                                                <p>Frequency tables are useful for analyzing categorical data. To see distrubution of the data helps to get better insight</p>        
+                                                </div>
+                                                
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Frequency_table_permit_Feature.png" alt="missing_values" style="width: 100%">
+                                                <p>Frequency tables are useful for analyzing categorical data. To see distrubution of the data helps to get better insight</p>        
+                                                </div>
+                                                
+                                </div>
+                                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4 main_box">
+                                        
+                                                <div class="main_box_content">
+                                                
+                                                <img class= "my_imgs" src="../static/images/Frequency_table_source_type_Feature.png" alt="missing_values"  style="width: 100%">
+                                                <p>Frequency tables are useful for analyzing categorical data. To see distrubution of the data helps to get better insight</p>        
+                                                </div>
+                                                
+                                </div>
+
+
+                              
+                        </div>
+                
+                
+        </div>
+ 
+<div class="eight_row">
+
+                <div class="row">
+                        <h3 class="baslik" style="text-align: center; margin-bottom: 3%; margin-top:10%">Bi-variate Analysis</h3>
+                        <p>Bi-variate Analysis finds out the relationship between two variables. Here, we look for association and disassociation between variables at a pre-defined significance level. We can perform bi-variate analysis for any combination of categorical and continuous variables. The combination can be: Categorical & Categorical, Categorical & Continuous and Continuous & Continuous. Different methods are used to tackle these combinations during analysis process.</p>
+                        <h4 style =" margin-bottom: 3%; margin-top:5%">Continuous & Continuous:</h4>
+                        <p>While doing bi-variate analysis between two continuous variables, we should look at scatter plot. It is a nifty way to find out the relationship between two variables. The pattern of scatter plot indicates the relationship between variables. The relationship can be linear or non-linear.</p>
+                        <h4 style ="text-align: center; margin-bottom: 3%; margin-top:5%">Lattidue & Longitude</h4>
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                
+                                <div class="main_box_content">
+                                
+                                <img class= "my_imgs" src="../static/images/Before_Lat_Long_Features.png" alt="missing_values"style="margin:5%" >
+                                <p>Scatter Plots are usefull to get more information about the 2 continious variables </p>        
+                                </div>
+                                <p></p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                
+                                <div class="main_box_content">
+                                
+                                <img class= "my_imgs" src="../static/images/After_Lat_Long_Features.png" alt="missing_values"style="margin:5%" >
+                                <p>Scatter Plots are usefull to get more information about the 2 continious variables </p>
+                                </div>
+                                <p></p>
+                        </div>
+
+          
+                                
+                        
+                </div>
+        </div>
+
+<div class="eight_row">
+
+        <div class="row">
+                <h4 style =" margin-bottom: 3%; margin-top:5%">Categorical & Categorical:</h4>
+                <p>To find the relationship between two categorical variables, Two-way table , Stacked Column Chart ,Chi-Square Test.Stacked Column Chart is more visual. </p>
+                <h4 style ="text-align: center; margin-bottom: 3%; margin-top:5%">Stacked Column Charts</h4>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <img class= "my_imgs" src="../static/images/Stackec_bar_basin_Feature.png" alt="missing_values" >
+                        
+                </div>
+
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <img class= "my_imgs" src="../static/images/Stackec_bar_extraction_type_class_Feature.png" alt="missing_values" >
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <img class= "my_imgs" src="../static/images/Stackec_bar_public_meeting_Feature.png" alt="missing_values" >
+                </div>
+        </div>
+        <div class="row" style="margin-bottom:5%">
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <p>Stacked charts are one of the best way to visualize categorical data</p>        
+                                
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <p>Stacked charts are one of the best way to visualize categorical data</p>        
+                        
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <p>Stacked charts are one of the best way to visualize categorical data</p>       
+                       
+                </div>
+        </div>
+
+        <div class="row" >        
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <img class= "my_imgs" src="../static/images/Stackec_bar_scheme_management_Feature.png" alt="missing_values" >
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <img class= "my_imgs" src="../static/images/Stackec_bar_source_type_Feature.png" alt="missing_values">
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <img class= "my_imgs" src="../static/images/Stackec_bar_water_quality_Feature.png" alt="missing_values" >
+                </div>
+        </div>
+
+        <div class="row" style="margin-bottom:5%">
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <p>Stacked charts are one of the best way to visualize categorical data</p>        
+                       
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <p>Stacked charts are one of the best way to visualize categorical data</p>       
+                       
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-4 col-lg-4">
+                        <p>Stacked charts are one of the best way to visualize categorical data</p>       
+                       
+                </div>
+        </div>
+        
+</div>
+
+
+
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

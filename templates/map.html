@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Basic Map</title>
+
+   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+ 
+  <!--Plotly -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- Leaflet CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/styles/style.css">
+
+    <!--Jqueary download-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Import D3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!--Normally these medium columns go full wide on small screen sizes-->
+       <div class="row">
+       <nav class="navbar navbar-default">
+               <div class="container-fluid">
+               <!-- Brand and toggle get grouped for better mobile display -->
+               <div class="navbar-header ">
+               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       </button>
+                       <!-- <a class="navbar-brand" href="#"></a> -->
+                       <h1 class ="latidute_text" style="font-weight:bold"><a href="/">Water Pump Project</a></h1>
+               </div>
+               
+               <!-- Collect the nav links, forms, and other content for toggling -->
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science Cycle <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="/business">1 Define The Goal</a></li>
+                                <li><a href="/getting_data">2 Get The Data</a></li>
+                                <li><a href="/cleaning">3 Explore&Clean Data</a></li>
+                                <li><a href="/enrich">4 Enrich The Data</a></li>
+                                <li><a href="/find_insight">5 Find Insights and Visualize</a></li>
+                                <li><a href="/ml">6 Deploy ML</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/map">Map Visualization of Data</a></li>
+                        
+                </ul>
+               </div><!-- /.navbar-collapse -->
+               </div><!-- /.container-fluid -->
+               </nav>
+       </div>   
+       
+           <div class="second_row">
+              <div class="row">
+
+               <!-- <h3 style = "text-align: center; color: blue"> Map Visualization of Water Pump Data</h3>
+                -->
+              </div>
+               <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 right_box">
+                               <div class= "second_box_content">
+                                        <!-- The div where we will inject our map -->
+                                        <div>
+                                          <div id="map"></div>
+                                                                                
+                                        </div>
+                                </div>
+                       </div>
+                     
+               </div>
+       
+       
+           </div>
+
+    </div>
+ 
+
+    
+  
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Our JS -->
+<script type="text/javascript" src="../static/js/map.js"></script>
+</html>

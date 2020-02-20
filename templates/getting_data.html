@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Columns</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body class="all_body">
+<div class="container">
+ <!--Normally these medium columns go full wide on small screen sizes-->
+<div class="row">
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <h1 class ="latidute_text" style="font-weight:bold"><a href="/">Water Pump Project</a></h1>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science Cycle <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="/business">1 Define The Goal</a></li>
+                                <li><a href="/getting_data">2 Get The Data</a></li>
+                                <li><a href="/cleaning">3 Explore&Clean Data</a></li>
+                                <li><a href="/enrich">4 Enrich The Data</a></li>
+                                <li><a href="/find_insight">5 Find Insights and Visualize</a></li>
+                                <li><a href="/ml">6 Deploy ML</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/map">Map Visualization of Data</a></li>
+                        
+                </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </nav>
+</div>   
+
+    <div class="second_row">
+
+                <div class="row">
+                                <div class="col-xs-12 col-sm-12  col-md-8 col-lg-8 main_box">
+                                        <h3 class="baslik">Step 2: Getting Data</h3>
+                                        <div class="main_box_content">
+                                           <p>I got the data from <a href="https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/page/25/#features_list">DrivenData</a> website.
+                                                 DrivenData works on projects at the intersection of data science and social impact, 
+                                                 in areas like international development, health, education, research and conservation, 
+                                                 and public services. </p>
+                                            <p>From the website I get data by downloading 4 CSV files.</p>    
+                                                <ul>
+                                                        <li>Submission format: The format for submitting your predictions</li>
+                                                        <li>Test set values: The independent variables that need predictions</li>
+                                                        <li>Training set labels: The dependent variable (status_group) for each of the rows in Training set values</li>
+                                                        <li>Training set values: The independent variables for the training set</li>
+                                                </ul>
+                                            <br>
+                                            <p>I am provided the following set of information about the waterpoints:</p>
+                                            
+                                        </div>
+                                </div>
+                                   
+                        
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right_box">
+                                        <div class= "second_box_content">
+                                                <!--<h4 class="baslik" style="text-align:center">Data Driven</h4>-->
+                                                <img class= "my_imgs" src="../static/images/data_driven_logo.png" alt="data_driven" style=" margin:10%; width: 300px;">
+                                       </div>
+                                </div>
+                              
+                        </div>
+
+
+    </div>
+
+    <div class="third_row">
+
+                <div class="row">
+                        <div class="col-xs-12 col-sm-12  col-md-8 col-lg-8 main_box">
+                                
+                                <div class="main_box_content">
+                                        <h3 >Distribution of Labels</h3>
+                                        <p>The labels in this dataset are simple. There are three possible values:</p>
+                                        <ul>
+                                                <li>Functional - the waterpoint is operational and there are no repairs needed</li>
+                                                <li>Functional needs repair - the waterpoint is operational, but needs repairs</li>
+                                                <li>Non functional - the waterpoint is not operational</li>
+                                        </ul>
+                                        
+                                        <h3 >The features in this dataset</h3>
+                                        <p>The features in this dataset are also simple.</p>
+                                        
+                                        <ul>
+                                        <li> amount_tsh - Total static head (amount water available to waterpoint)</li>
+                                        <li> li>date_recorded - The date the row was entered</li>
+                                        <li> funder - Who funded the well</li>
+                                        <li> gps_height - Altitude of the well</li>
+                                        <li> installer - Organization that installed the well</li>
+                                        <li> longitude - GPS coordinate</li>
+                                        <li> latitude - GPS coordinate</li>
+                                        <li> wpt_name - Name of the waterpoint if there is one</li>
+                                        <li> num_private -</li>
+                                        <li> basin - Geographic water basin</li>
+                                        <li> subvillage - Geographic location</li>
+                                        <li> region - Geographic location</li>
+                                        <li> region_code - Geographic location (coded)</li>
+                                        <li> district_code - Geographic location (coded)</li>
+                                        <li> lga - Geographic location</li>
+                                        <li> ward - Geographic location</li>
+                                        <li> population - Population around the well</li>
+                                        <li> public_meeting - True/False</li>
+                                        <li> recorded_by - Group entering this row of data</li>
+                                        <li> scheme_management - Who operates the waterpoint</li>
+                                        <li> scheme_name - Who operates the waterpoint</li>
+                                        <li> permit - If the waterpoint is permitted</li>
+                                        <li> construction_year - Year the waterpoint was constructed</li>
+                                        <li> extraction_type - The kind of extraction the waterpoint uses</li>
+                                        <li> extraction_type_group - The kind of extraction the waterpoint uses</li>
+                                        <li> extraction_type_class - The kind of extraction the waterpoint uses</li>
+                                        <li> management - How the waterpoint is managed</li>
+                                        <li> management_group - How the waterpoint is managed</li>
+                                        <li> payment - What the water costs</li>
+                                        <li> payment_type - What the water costs</li>
+                                        <li> water_quality - The quality of the water</li>
+                                        <li> quality_group - The quality of the water</li>
+                                        <li> quantity - The quantity of water</li>
+                                        <li> quantity_group - The quantity of water</li>
+                                        <li> source - The source of the water</li>
+                                        <li> source_type - The source of the water</li>
+                                        <li> source_class - The source of the water</li>
+                                        <li> waterpoint_type - The kind of waterpoint</li>
+                                        <li> waterpoint_type_group - The kind of waterpoint</li>
+                                        </ul>
+                                        <br>
+                                        <br>
+        
+                                </div>
+                        </div>
+                           
+                
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right_box">
+                                        <div class= "second_box_content">
+                                          
+                                                <img class= "my_imgs" src="../static/images/Status_group_all_lat.png" alt="knn" style=" margin-top:20%; height: 250px;">
+                                       </div>
+                                </div>
+                      
+                </div>
+        
+        
+            </div>
+
+ 
+</div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

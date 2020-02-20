@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Visualize</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body class="all_body">
+<div class="container">
+ <!--Normally these medium columns go full wide on small screen sizes-->
+<div class="row">
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand" href="#"></a> -->
+                <h1 class ="latidute_text" style="font-weight:bold"><a href="/">Water Pump Project</a></h1>
+        </div>
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        
+                <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Data Science Cycle <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                <li><a href="/business">1 Define The Goal</a></li>
+                                <li><a href="/getting_data">2 Get The Data</a></li>
+                                <li><a href="/cleaning">3 Explore&Clean Data</a></li>
+                                <li><a href="/enrich">4 Enrich The Data</a></li>
+                                <li><a href="/find_insight">5 Find Insights and Visualize</a></li>
+                                <li><a href="/ml">6 Deploy ML</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="/map">Map Visualization of Data</a></li>
+                       
+                </ul>
+        </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+        </nav>
+</div>   
+
+    <div class="second_row">
+
+        <div class="row">
+                <div class="col-xs-12 col-sm-12  col-md-8 col-lg-8 main_box">
+                        <h3 class="baslik">Step 5: Find Insight and Visualize</h3>
+                        <div class="main_box_content">
+                            <p class="first_p_in_summary"> In this step I created more visualization and try get more insigth about the data. After carefully examining the trainda data. I found corelated information between some column and I droped them. I see some column like geografic locations and amount_tsh and gps_height columns have importand information. Also some other categorical column like quantity give usefull information aboutthe status of the water pumps.I used date recored column to create new colum time difference between recored and consraction year and today.  </p>
+                                     
+                            <br>
+                            <br>
+                        </div>
+                </div>
+                   
+        
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 right_box">
+                        
+                        <div class= "second_box_content">
+                        <a href="/map">
+                                <img class= "my_imgs" style= "width: 400px"src="../static/images/tanzania_map.png" alt="missing_values" style="margin-left: 10%" >
+                        </a>
+                        </div>
+                </div>
+              
+        </div>
+
+
+    </div>
+
+    <div class="third_row">
+
+                <div class="row">
+                        <h3 class="baslik" style="text-align: center; margin-bottom: 3%">Visualizations</h3>
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                
+                                <div class="main_box_content">
+                                
+                                <img class= "my_imgs" src="../static/images/Status_group_all_lat.png" alt="missing_values" style="margin-left: 10%" >
+                                <p>Status group with all data points are included</p>        
+                                </div>
+                        </div>
+                           
+                
+                        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 main_box">
+                                
+                                        <div class="main_box_content">
+                                        
+                                        <img class= "my_imgs" src="../static/images/Status_group_0_lats.png" alt="missing_values" style="margin-left: 10%" >
+                                        <p>Status group values for only Longitude and latitude values are missing as 0</p>        
+                                        <br>
+                                        <br>
+                                        </div>
+                        </div>
+                        
+                      
+                </div>
+        
+        
+        </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
